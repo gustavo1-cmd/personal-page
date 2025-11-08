@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* CORPO GERAL */
+body {
+  background: radial-gradient(circle at top left, #0d001a, #000);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* CABEÇALHO FIXO */
+.menu_superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(20, 0, 40, 0.85);
+  border-bottom: 1px solid #6d00ff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.menu_superior .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #b366ff;
+  text-shadow: 0 0 10px #b366ff;
+}
+
+.menu_superior a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.menu_superior a:hover {
+  color: #b366ff;
+  text-shadow: 0 0 8px #b366ff;
+}
+
+/* SEÇÃO PRINCIPAL */
+.section_geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 140px 20px 100px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.palavra_comum {
+  font-size: 2.6rem;
+}
+
+.palavra_estilizada {
+  color: #b366ff;
+  text-shadow: 0 0 15px #b366ff;
+}
+
+.section_geral h2 {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  color: #ccc;
+}
+
+/* TEXTO SOBRE */
+.sobre_mim {
+  margin: 25px auto;
+  max-width: 700px;
+  color: #aaa;
+  line-height: 1.7;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* FOTO CENTRALIZADA */
+.minha_fotozinha {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #b366ff;
+  margin: 40px 0 20px;
+  object-fit: cover;
+  box-shadow: 0 0 25px #b366ff60;
+  display: block;
+}
+
+/* BOTÃO DE CONTATO */
+.hire_me {
+  margin-top: 30px;
+  background: linear-gradient(90deg, #6d00ff, #b366ff);
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px #6d00ff70;
+}
+
+.hire_me:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px #b366ff;
+}
+
+/* ÍCONES DAS REDES SOCIAIS */
+.botoes {
+  text-align: center;
+  margin: 40px 0 80px;
+}
+
+.botoes ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.botoes i {
+  font-size: 1.8rem;
+  color: #b366ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botoes i:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #b366ff, 0 0 25px #6d00ff;
+  transform: scale(1.2);
+}
+
+/* SEÇÕES INFERIORES */
+section {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #222;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #b366ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #6d00ff;
+}
+
+section p,
+section ul {
+  color: #bbb;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 10px 0;
+}
+
+/* SEÇÃO CONTATO */
+#contato ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+}
+
+#contato ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+#contato i {
+  color: #b366ff;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+#contato i:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #b366ff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .menu_superior {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .palavra_comum {
+    font-size: 2rem;
+  }
+
+  .section_geral h2 {
+    font-size: 1.3rem;
+  }
+
+  .minha_fotozinha {
+    width: 150px;
+    height: 150px;
+  }
+
+  section {
+    padding: 80px 15px;
+  }
+}
